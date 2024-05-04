@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <title>שליטה במקשים נוקיה</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="description" content="שליטה במקשי טלפונים כמו nokia c2 וכדומה">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div style="background-color: #08549b; padding: 10px; box-shadow: 0 1px 10px 7px #00000061;">
+        <h3 class="noselect" style="right: 15px;">בס"ד</h3>
+        <button onclick="connect()">חיבור</button>
+        <button onclick="disconnect()">ניתוק</button>
+        <a href="instructions.mp4" target="_blank">
+            <h3 class="noselect" style="left: 100px;">מדריך</h3>
+        </a>
+        <a href="https://github.com/spnokia/spnokia.github.io" target="_blank">
+            <h3 class="noselect" style="left: 15px;">GitHub</h3>
+        </a>
+    </div>
+    <table dir="ltr" class="keys noselect">
+        <tr>
+            <td onclick="ckpd('[')">---</td>
+            <th rowspan="2">
+                <table>
+                    <tr>
+                        <td style="visibility: hidden;"></td>
+                        <td onclick="ckpd('^')"></td>
+                        <td style="visibility: hidden;"></td>
+                    </tr>
+                    <tr>
+                        <td onclick="ckpd('<')"></td>
+                        <td onclick="ckpd('m')" style="padding: 25px;"></td>
+                        <td onclick="ckpd('>')"></td>
+                    </tr>
+                    <tr>
+                        <td style="visibility: hidden;"></td>
+                        <td onclick="ckpd('v')"></td>
+                        <td style="visibility: hidden;"></td>
+                    </tr>
+                </table>
+            </th>
+            <td onclick="ckpd(']')">---</td>
+        </tr>
+        <tr>
+            <td onclick="ckpd('s')" style="color: green;">~</td>
+            <td onclick="ckpd('p')" style="color: red;">~</td>
+        </tr>
+        <tr>
+            <td onclick="ckpd('1')">1</td>
+            <td onclick="ckpd('2')">2 דהו</td>
+            <td onclick="ckpd('3')">3 אבג</td>
+        </tr>
+        <tr>
+            <td onclick="ckpd('4')">4 מנ</td>
+            <td onclick="ckpd('5')">5 יכל</td>
+            <td onclick="ckpd('6')">6 זחט</td>
+        </tr>
+        <tr>
+            <td onclick="ckpd('7')">7 רשת</td>
+            <td onclick="ckpd('8')">8 צק</td>
+            <td onclick="ckpd('9')">9 סעפ</td>
+        </tr>
+        <tr>
+            <td onclick="ckpd('*')">*</td>
+            <td onclick="ckpd('0')">0</td>
+            <td onclick="ckpd('#')">#</td>
+        </tr>
+    </table>
+</body>
+
+</html>
